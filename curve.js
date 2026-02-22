@@ -139,4 +139,5 @@ exports.verifySignature = function(pubKey, msg, sig, isInit) {
         throw new Error("Invalid signature");
     }
     return isInit ? true : curveJs.verify(pubKey, msg, sig);
+
 };
